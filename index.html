@@ -80,6 +80,28 @@
                       </div>
                     </div>
                   </div>
+                <!-- Ellipse card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body ">
+                     <div class="text-center items-center space-y-3">
+                        <h2 class="text-3xl font-semibold">Ellipse</h2>
+                        <p>Area (A) = πab</p> 
+                        <p>b=10cm , h=12cm</p>
+                        <p>
+                          <input type="text" class="border w-24 mr-4 bg-slate-100 text-xl px-2 py-1" name="" id="Ellipse-a" placeholder="large"> <span class="mr-3">cm</span>
+                          <input type="text" class="border w-24 bg-slate-100 text-xl px-2 py-1" name="" id="Ellipse-b" placeholder="short"> <span>cm</span>
+                        </p>
+                     </div>
+                      <p class="text-xl font-semibold text-start">Area : <span id="Ellipse">0</span> cm<sup>2</sup>
+                      </p>
+                      <div class="card-actions mt-2">
+                        <button onclick="calculateEllipseArea()" class="btn btn-primary w-full text-white">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
 
             </div>
             <!-- area calculator -->
