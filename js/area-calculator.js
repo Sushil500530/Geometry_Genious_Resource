@@ -16,3 +16,13 @@ function calculatorTriangleArea(){
         areaResult.innerText = triangleArea
     
     }
+    function calculateRactanglerArea(){
+        const inputRactangleBase = document.getElementById('ractangle-base').value ;
+        const base = parseFloat(inputRactangleBase) ;
+        const inputRactangleHeight = document.getElementById('ractangle-height').value ;
+        const height = parseFloat(inputRactangleHeight) 
+        const ractangleArea = base * height ;
+        const ractangle = document.getElementById('rectangle')
+        ractangle.innerText = ractangleArea
+    }
+

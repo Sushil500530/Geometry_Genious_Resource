@@ -31,7 +31,7 @@
                           <input type="text" class="border w-24 bg-slate-100 text-xl px-2 py-1" name="" id="input-height" placeholder="height"> <span class="ml-2">cm</span>
                         </p>
                      </div>
-                      <p class="text-xl font-semibold text-start">Area : <span id="area">0</span> cm <sup>2</sup> </p>
+                      <p class="text-xl font-semibold text-start">Area : <span id="area">0</span> cm<sup>2</sup> </p>
                       <div class="card-actions mt-2">
                         <button class="btn btn-primary w-full text-white" onclick="calculatorTriangleArea()">Calculate</button>
                       </div>
@@ -47,14 +47,14 @@
                         <h2 class="text-3xl font-semibold">Ractangle</h2>
                         <p>Area (A) =W X I</p> 
                         <p>
-                          <input type="text" class="border w-24 mr-4 bg-slate-100 text-xl px-2 py-1" name="" id="" placeholder="base"> <span class="mr-3">cm</span>
-                          <input type="text" class="border w-24 bg-slate-100 text-xl px-2 py-1" name="" id="" placeholder="height"> <span class="ml-2">cm</span>
+                          <input type="text" class="border w-24 mr-4 bg-slate-100 text-xl px-2 py-1" name="" id="ractangle-base" placeholder="W"> <span class="mr-3">cm</span>
+                          <input type="text" class="border w-24 bg-slate-100 text-xl px-2 py-1" name="" id="ractangle-height" placeholder="I"> <span class="ml-2">cm</span>
                         </p>
                      </div>
-                      <p class="text-xl font-semibold text-start">Area : <span><span>
+                      <p class="text-xl font-semibold text-start">Area : <span id="rectangle">0</span> cm<sup>2</sup>
                       </p>
                       <div class="card-actions mt-2">
-                        <button class="btn btn-primary w-full text-white">Calculate</button>
+                        <button onclick="calculateRactanglerArea()" class="btn btn-primary w-full text-white">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -69,14 +69,14 @@
                         <p>Area (A) = b X h</p> 
                         <p>b=10cm , h=12cm</p>
                         <p>
-                          <input type="text" class="border w-24 mr-4 bg-slate-100 text-xl px-2 py-1" name="" id="" placeholder="base"> <span class="mr-3">cm</span>
-                          <input type="text" class="border w-24 bg-slate-100 text-xl px-2 py-1" name="" id="" placeholder="height"> <span class="ml-2">cm</span>
+                          <input type="text" class="border w-24 mr-4 bg-slate-100 text-xl px-2 py-1" name="" id="parallelogram-base" placeholder="base"> <span class="mr-3">cm</span>
+                          <input type="text" class="border w-24 bg-slate-100 text-xl px-2 py-1" name="" id="parallelogram-height" placeholder="height"> <span>cm</span>
                         </p>
                      </div>
-                      <p class="text-xl font-semibold text-start">Area : <span><span>
+                      <p class="text-xl font-semibold text-start">Area : <span id="parallelogram">0</span> cm<sup>2</sup>
                       </p>
                       <div class="card-actions mt-2">
-                        <button class="btn btn-primary w-full text-white">Calculate</button>
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full text-white">Calculate</button>
                       </div>
                     </div>
                   </div>
