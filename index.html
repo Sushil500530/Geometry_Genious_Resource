@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
     <link rel="shortcut icon" href="./images/geomatry.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-
+<body class="container mx-auto">
+    <header class="container mx-auto ">
+        <div class="navbar bg-base-300">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+            </div>
+            <h2 class=" text-3xl text-black font-bold px-4 py-3 block">Interactive <br> <span class="text-2xl text-green-700">Geometry Genius</span> </h2> 
+           
+          </div>
+          <div class="navbar-center hidden lg:flex">
+          
+          </div>
+          <div class="navbar-end">
+            <a class="bg-blue-500 px-6 py-3 rounded hover:bg-blue-700 text-xl font-semibold hover:text-white">BLOG</a>
+          </div>
+        </div>
     </header>
     <main>
         <!-- container -->
         <div class="flex flex-col lg:flex-row">
             <!-- shap-container  -->
-            <div class="container mx-auto flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-3 lg:gap-4 gap-2 p-8">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-3 lg:gap-6 gap-2 p-8">
                 <!-- Triangle card -->
                 <div class="card bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -143,14 +159,14 @@
                       </div>
                     </div>
                   </div>
+                </div>
 
-            </div>
-            <!-- area calculator -->
-            <div class="w-[400px] mx-auto flex flex-col items-center md:mt-4 lg:mt-12">
-                <div class="text-4xl text-center">Area Calculator</div>
-                <div id="calculation-details"></div>
-            </div>
-        </div>
+                  <!-- area calculator -->
+                  <div class=" w-[300px] mx-auto flex flex-col items-center md:mt-4 lg:mt-12">
+                      <div class="text-4xl text-center">Area Calculator</div>
+                      <div id="calculation-details"></div>
+                  </div>
+              </div>
     </main>
     <script src="./js/area-calculator.js"></script>
 </body>
