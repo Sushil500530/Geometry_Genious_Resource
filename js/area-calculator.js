@@ -52,6 +52,8 @@ function calculatorTriangleArea(){
         const ellipseMajor = getInputValue('Ellipse-a')
         const ellipseMinor = getInputValue('Ellipse-b') 
         const area = 3.1416 * ellipseMajor * ellipseMinor ;
+        const areaResult = area.toFixed(2)
         // const area = Math.PI*(ellipseMajor * ellipseMinor)
-        setElementInnerText('Ellipse', area)
+        setElementInnerText('Ellipse', areaResult)
+
     }
