@@ -24,6 +24,34 @@ function calculatorTriangleArea(){
         addCalculatioEntry('Triangle', triangleArea)
     
     }
+    // Rhombus Area 
+function calculatorRhombusArea(){
+    //    get base triangle value 
+        const inputD1Element = document.getElementById('input-d1').value ;
+        // console.log(typeof inputTriangle)
+        const inputD1 = parseFloat(inputD1Element) 
+        // console.log(inputBase)
+        //    get height triangle value 
+        const inputD2Element = document.getElementById('input-d2').value ;
+        const inputD2 = parseFloat(inputD2Element) 
+        // console.log(inputHeight)
+        // validation 
+        if(isNaN(inputD1) || isNaN(inputD2)){
+            alert('please insert a number...!') 
+            return ;
+        }
+    
+        // calculate area 
+        const rhombusArea = 0.5 * inputD1 * inputD2 ;
+        // console.log(triangleArea)
+        const areaResult = document.getElementById('rhombus-area')
+        areaResult.innerText = rhombusArea ;
+
+        // set entry details  output a dekha jabe(name and value ta)
+        addCalculatioEntry('Rhombus', rhombusArea)
+    
+    }
+    // Ractangle Area 
     function calculateRactanglerArea(){
         const inputRactangleBase = document.getElementById('ractangle-base').value ;
         const width = parseFloat(inputRactangleBase) ;
@@ -42,7 +70,7 @@ function calculatorTriangleArea(){
         // set entry details 
         addCalculatioEntry('Rectangle', ractangleArea)
     }
-
+    // Parallelogram Area 
     function calculateParallelogramArea(){
         const base = getInputValue('parallelogram-base')
          const height = getInputValue('parallelogram-height')
@@ -57,12 +85,11 @@ function calculatorTriangleArea(){
         //  const paralleArea = document.getElementById('parallelogram') 
 
         // add to calculation entry 
-        addCalculatioEntry('perallelogram', area)
+        addCalculatioEntry('parallelogram', area)
         // set entry details 
-         setElementInnerText('Parallelogram',area)
+         setElementInnerText('parallelogram',area)
      }
      // reusable function 
- 
      function getInputValue(fieldId){
          const inputField = document.getElementById(fieldId).value ;
          const value = parseFloat(inputField) ;
@@ -89,7 +116,24 @@ function calculatorTriangleArea(){
         setElementInnerText('Ellipse', areaResult)
         
         // set entry details 
-        addCalculatioEntry('ellipse', areaResult)
+        addCalculatioEntry('Ellipse', areaResult)
+    }
+    // pantagon area 
+    function calculatorPentagonArea(){
+        const pentagonP = getInputValue('input-p')
+        const pentagonB = getInputValue('input-b') 
+        // validation 
+        if(isNaN(pentagonP) || isNaN(pentagonB)){
+            alert('please insert a number...!') 
+            return ;
+        }
+        const pentagonArea = 0.5 * pentagonP * pentagonB ;
+        const areaResult = pentagonArea.toFixed(2)
+        // const area = Math.PI*( pentagonP * pentagonB)
+        setElementInnerText('pentagon-area', areaResult)
+        
+        // set entry details 
+        addCalculatioEntry('Pentagon', areaResult)
     }
 
     // add to calculation entry 
