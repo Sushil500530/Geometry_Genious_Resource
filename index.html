@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <link rel="shortcut icon" href="./images/geomatry.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,9 +17,9 @@
         <!-- container -->
         <div class="flex flex-col lg:flex-row">
             <!-- shap-container  -->
-            <div class="container mx-auto flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-8">
+            <div class="container mx-auto flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-3 lg:gap-4 gap-2 p-8">
                 <!-- Triangle card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                       <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -38,7 +39,7 @@
                     </div>
                   </div>
                 <!-- Ractangle card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                       <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -59,7 +60,7 @@
                     </div>
                   </div>
                 <!-- Parallelogram card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                       <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -81,7 +82,7 @@
                     </div>
                   </div>
                     <!-- Rhombus card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl">
                   <figure class="px-10 pt-10">
                     <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -101,7 +102,7 @@
                   </div>
                 </div>
                     <!-- Pentagon card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl">
                   <figure class="px-10 pt-10">
                     <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -121,7 +122,7 @@
                   </div>
                 </div>
                 <!-- Ellipse card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                       <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -145,8 +146,8 @@
 
             </div>
             <!-- area calculator -->
-            <div class="w-[400px]">
-                <div class="text-4xl">Area Calculator</div>
+            <div class="w-[400px] mx-auto flex flex-col items-center md:mt-4 lg:mt-12">
+                <div class="text-4xl text-center">Area Calculator</div>
                 <div id="calculation-details"></div>
             </div>
         </div>
