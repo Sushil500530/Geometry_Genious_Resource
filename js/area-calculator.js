@@ -18,7 +18,10 @@ function calculatorTriangleArea(){
         const triangleArea = 0.5 * inputBase * inputHeight ;
         // console.log(triangleArea)
         const areaResult = document.getElementById('area')
-        areaResult.innerText = triangleArea
+        areaResult.innerText = triangleArea ;
+
+        // set entry details  output a dekha jabe(name and value ta)
+        addCalculatioEntry('Triangle', triangleArea)
     
     }
     function calculateRactanglerArea(){
@@ -34,7 +37,10 @@ function calculatorTriangleArea(){
 
         const ractangleArea = width * length ;
         const ractangle = document.getElementById('rectangle')
-        ractangle.innerText = ractangleArea
+        ractangle.innerText = ractangleArea ;
+
+        // set entry details 
+        addCalculatioEntry('Rectangle', ractangleArea)
     }
 
     function calculateParallelogramArea(){
@@ -52,8 +58,8 @@ function calculatorTriangleArea(){
 
         // add to calculation entry 
         addCalculatioEntry('perallelogram', area)
-
-         setElementInnerText('parallelogram',area)
+        // set entry details 
+         setElementInnerText('Parallelogram',area)
      }
      // reusable function 
  
@@ -81,7 +87,9 @@ function calculatorTriangleArea(){
         const areaResult = area.toFixed(2)
         // const area = Math.PI*(ellipseMajor * ellipseMinor)
         setElementInnerText('Ellipse', areaResult)
-
+        
+        // set entry details 
+        addCalculatioEntry('ellipse', areaResult)
     }
 
     // add to calculation entry 
